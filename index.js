@@ -25,7 +25,7 @@ app.get(endpoint, function(req, res){
     res.send(pedido.filter(Boolean));
 });
 
-//GET
+//GETs
 app.get(`${endpoint}/:id`, function(req, res){
     const id = req.params.id;
     const pedidos = pedido[id];
